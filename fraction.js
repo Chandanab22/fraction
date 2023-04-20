@@ -4,6 +4,7 @@ class Fraction {
     this.denominator = denominator;
   }
   
+
   subtract(otherFraction) {
     const commonDenominator = this.denominator * otherFraction.denominator;
     const numerator1 = this.numerator * otherFraction.denominator;
@@ -23,3 +24,16 @@ const fraction2 = new Fraction(1, 4);
 
 const result = fraction1.subtract(fraction2);
 console.log(result.toString());
+
+divide(other) {
+    const newNumerator = this.numerator * other.denominator;
+    const newDenominator = this.denominator * other.numerator;
+    return new Fraction(newNumerator, newDenominator);
+  }
+}
+  
+
+
+
+
+
