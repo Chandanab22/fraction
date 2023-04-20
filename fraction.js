@@ -4,11 +4,11 @@ class Fraction {
     this.denominator = denominator;
   }
   
- multiply(other) {
-    const newNumerator = this.numerator * other.numerator;
-    const newDenominator = this.denominator * other.denominator;
+divide(other) {
+    const newNumerator = this.numerator * other.denominator;
+    const newDenominator = this.denominator * other.numerator;
     return new Fraction(newNumerator, newDenominator);
-  }
+  }
 }
   
 
